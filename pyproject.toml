@@ -1,0 +1,11 @@
+[project]
+name = "keyforge"
+version = "0.1.0"
+description = "KeyForge: secure password generator from terminal"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "alipatdev", email = "patrizio.ternali15@gmail.com" }]
+requires-python = ">=3.6"
+
+[project.scripts]
+keyforge = "keyforge.main:main"
