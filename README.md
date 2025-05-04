@@ -1,4 +1,6 @@
 # KeyForge  
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
 Secure Password Generator CLI Tool
 
 KeyForge is a simple, cross-platform command-line utility for generating strong, random passwords. It is ideal for developers and users who need to quickly generate secure credentials from the terminal.
