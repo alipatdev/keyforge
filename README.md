@@ -36,27 +36,29 @@ pip3 install --user -e .
 
 ---
 
-## 🧭 Make Sure It's in Your PATH
+## 🧭 Ensure the Command Is in Your PATH
 
-After installation, the `keyforge` command is placed in:
+Depending on your system and Python version, the `keyforge` executable may be placed in one of the following directories:
 
-- `~/.local/bin` (on macOS/Linux)
-- `%APPDATA%\\Python\\PythonXY\\Scripts` (on Windows)
+- `~/.local/bin` (common on Linux)
+- `~/Library/Python/3.X/bin` (common on macOS)
 
-Ensure that directory is in your `PATH`.
+To make sure your terminal can find the `keyforge` command, add the correct directory to your `PATH`.
 
-To add `~/.local/bin` to your PATH on macOS/Linux:
+For example, on macOS (Python 3.12):
 
 ```bash
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$HOME/Library/Python/3.12/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-You can now run:
+Then you can run:
 
 ```bash
 keyforge --help
 ```
+
+> Tip: Use `which keyforge` or `command -v keyforge` to confirm that it's correctly installed.
 
 ---
 
